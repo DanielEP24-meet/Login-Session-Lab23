@@ -6,9 +6,9 @@
 	<title></title>
 </head>
 <body>
-
-<!-- Display the variables from the login session here!
- -->
-
+	{% for quote in quotes %}
+	<h1>{{ author }}:{{ quote }}</h1>
+	<p>wrote at {{ age }} at the date: {{ quotes[quote] }}</p>
+	{%endfor%}
 </body>
 </html>
